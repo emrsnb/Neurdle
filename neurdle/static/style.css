@@ -2,3 +2,34 @@
     display: flex;
     flex-direction: row;
 }
+
+.row > div {
+    display: flex;
+    margin: 5px;
+    height: 60px;
+    width: 60px;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgrey;
+    user-select: none;
+}
+
+#fake-input {
+    width: 0px;
+    border: none;
+    display: none;
+}
+
+
+.row > div.right-place {
+    background-color: hsl(136, 100%, 66%);
+}
+
+.row > div.wrong-place {
+    background-color: hsl(52, 100%, 66%);
+}
+
+.row > div.not-in-word {
+    background-color: hsl(209, 7%, 66%);
+}
